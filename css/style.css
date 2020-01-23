@@ -66,13 +66,13 @@ th, td {
 th {
   font-size: 18pt;
 }
-ul:not(#navigation) {
+ul {
   list-style-image: url('../images/csharp.png');
 }
 #navigation {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   overflow: hidden;
   background-color: black;
   position: fixed;
@@ -82,6 +82,7 @@ ul:not(#navigation) {
 }
 #navigation li {
   display: inline;
+  padding: 0;
 }
 #navigation .active {
   color: white;
@@ -93,8 +94,8 @@ ul:not(#navigation) {
   text-align: center;
   font-size: 25px;
   text-decoration: none;
-  float:left;
   font-family: monospace;
+  float:left
 }
 #navigation a:hover:not(.active) {
   color: green;
