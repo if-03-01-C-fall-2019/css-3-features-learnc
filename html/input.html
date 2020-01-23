@@ -22,7 +22,7 @@
     <section>
       <h2 class="title">4. Getting Input from the user</h2>
       <hr>
-      <p>A program always needs a problem to solve and variables to work with. There's multiple ways of getting such data from the user,
+      <p class="overview">A program always needs a problem to solve and variables to work with. There's multiple ways of getting such data from the user,
         the easiest one being "<strong class="command">System.Console.ReadLine();</strong>".</p>
 <pre class="border">
 namespace Introduction
@@ -39,7 +39,7 @@ namespace Introduction
 }</pre>
       <br>
       <h3>Returning the input</h3>
-      <p>If you want to return a result with additional text ("The result is : ...") you will need an additional placeholder</p>
+      <p class="overview">If you want to return a result with additional text ("The result is : ...") you will need an additional placeholder</p>
 <pre class="border">
 namespace Introduction
 {
@@ -55,7 +55,8 @@ namespace Introduction
 }</pre>
     <br>
     <h4>Convert a string to a number</h4>
-    <p>If you want to convert a string to a number, you use the command "<strong>System.Convert.ToInt32([string]);</strong>"</p>
+    <p class="overview">If you want to convert a string to a number, you use the command
+      "<strong class="command">System.Convert.ToInt32([string]);</strong>"</p>
 <pre class="border">
 namespace Introduction
 {
@@ -98,10 +99,11 @@ namespace Introduction
           <td>float</td>
         </tr>
       </table>
-      <p class="important">Warning: You should be sure that the string only consists numbers before you
+      <p class="important">You should be sure that the string only consists numbers before you
         convert it, otherwise you will get an ERROR-message.</p>
         <br>
       <h5>A shortcut</h5>
+      <p class="overview">This shortcut is not adviceable, as it can be hard to read.</p>
 <pre class="border">
 namespace Introduction
 {
@@ -116,10 +118,9 @@ namespace Introduction
             }
     }
 }</pre>
-      <p>This shortcut is not adviceable, as it can be hard to read.</p>
       <br>
       <h4>Simplification</h4>
-      <p>Since writing "<strong class="command">System.Console....</strong>" is a lot of work and programmers are lazy folk,
+      <p class="overview">Since writing "<strong class="command">System.Console....</strong>" is a lot of work and programmers are lazy folk,
         C# came up with a solution:</p>
 <pre class="border">
 using System;

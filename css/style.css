@@ -2,10 +2,14 @@ body, html{
   background-image: url("../images/wallpaper.jpg");
   height: 100%;
   background-attachment: fixed;
-  padding: 20px;
 }
 body {
   padding-top: 45pt;
+  margin: 0;
+}
+p, pre, li {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .title {
     text-align: center;
@@ -21,6 +25,7 @@ body h2, h3, h4, h5{
   color: white;
   text-align: left;
   font-family: sans-serif;
+  padding-left: 20px;
 }
 
 body section {
@@ -29,7 +34,7 @@ body section {
   font-size: 15pt;
   font-weight: 100;
 }
-.border {
+/*.border {
   border-style: solid;
   border-width: 1px;
   width: 70%;
@@ -40,7 +45,7 @@ body section {
 }
 .border:hover{
   width: 75%;
-}
+}*/
 strong.command {
   color: green;
   text-decoration: underline;
@@ -61,7 +66,7 @@ th, td {
 th {
   font-size: 18pt;
 }
-ul {
+ul:not(#navigation) {
   list-style-image: url('../images/csharp.png');
 }
 #navigation {
@@ -100,6 +105,35 @@ ul {
   font-weight: bolder;
   color: red;
 }
+.important::before {
+  content: "Warning: ";
+}
 .important:hover {
   color: darkred;
+}
+.overview {
+  float: right;
+  margin-right: 68%;
+  border: solid 1px darkgreen;
+  background-color: darkgreen;
+  color: white;
+  margin-left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-collapse: separate;
+  padding: 15px;
+}
+.overview strong {
+  color: black;
+}
+.border {
+  margin-left: 35%;
+  border-style: solid;
+  border-right: none;
+  border-width: 1px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-collapse: separate;
+  padding: 15px;
+
 }
