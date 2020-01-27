@@ -136,9 +136,6 @@ ul:not(#navigation) {
 li.active{
   background-color: darkgreen;
 }
-li.active a{
-  color: white;
-}
 
 #navigation li:hover:not(.active), .dropdown:hover .dropbtn {
   background-color: white;
