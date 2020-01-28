@@ -7,7 +7,7 @@ body {
   padding-top: 45pt;
   margin: 0;
 }
-p, pre, li {
+p, pre, li, strong {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -42,18 +42,6 @@ body section {
   font-size: 15pt;
   font-weight: 100;
 }
-/*.border {
-  border-style: solid;
-  border-width: 1px;
-  width: 70%;
-  transition: width 0.5s;
-  border-radius: 10px;
-  border-collapse: separate;
-  padding: 15px;
-}
-.border:hover{
-  width: 75%;
-}*/
 strong.command {
   color: green;
   text-decoration: underline;
@@ -77,45 +65,14 @@ th {
 ul:not(#navigation) {
   list-style-image: url('../images/csharp.png');
 }
-/*#navigation {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-#navigation li {
-  display: inline;
-  padding: 0;
-}
-#navigation .active {
-  color: white;
-  background-color: green;
-}
-#navigation a {
-  color: green;
-  padding: 1%;
-  text-align: center;
-  font-size: 25px;
-  text-decoration: none;
-  font-family: monospace;
-  float:left
-}
-#navigation a:hover:not(.active) {
-  color: green;
-  background-color: white;
-}*/
+/************** navigation bar ******************/
 #navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
   top:0;
   left:0;
-  width:100%;
+  width: 100%;
   position: fixed;
   background-color: black;
 }
@@ -125,7 +82,7 @@ ul:not(#navigation) {
   padding-left: 0;
 }
 
-#navigation li a, .dropbtn {
+li a, .dropbtn {
   display: inline-block;
   color: darkgreen;
   text-align: center;
@@ -136,11 +93,15 @@ ul:not(#navigation) {
 li.active{
   background-color: darkgreen;
 }
-
-#navigation li:hover:not(.active), .dropdown:hover .dropbtn {
+li.active a {
+  color: white;
+}
+li.active .dropdown-content a {
+  color: black;
+}
+#navigation li:hover:not(.active), .dropdown:hover .dropbt {
   background-color: white;
 }
-
 li.dropdown {
   display: inline-block;
 }
@@ -162,7 +123,7 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover, .active .dropdown-content a:hover {
   background-color: #f1f1f1;
   color:green;
 }
@@ -170,7 +131,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/**/
+/**************************************/
 .important {
   text-decoration: underline;
   font-weight: bolder;
@@ -197,7 +158,7 @@ li.dropdown {
 .overview strong {
   color: black;
 }
-.border {
+.code {
   margin-left: 35%;
   border-style: solid;
   border-right: none;
