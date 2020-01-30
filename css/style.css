@@ -25,8 +25,8 @@ h1 {
     text-align: center;
     font-size: 100pt;
 
-    padding-top: 200px;
-    padding-bottom: 250px;
+    padding-top: 160px;
+    padding-bottom: 290px;
     0px;
 }
 body h2, h3, h4, h5{
@@ -65,7 +65,7 @@ th, td {
 th {
   font-size: 18pt;
 }
-ul:not(#navigation) {
+ul:not(#navigation, .changelog) {
   list-style-image: url('../images/csharp.png');
 }
 /************** navigation bar ******************/
@@ -185,20 +185,66 @@ li.dropdown {
   padding-bottom: 50px;
 }
 
-.changelog{
+/******************* changelog ********************/
+#changelog_btn{
+  display: block;
   text-decoration: none;
+  text-align: center;
   font-size: 20pt;
   padding: 1%;
   margin-left: 45%;
-  margin-top: 200px;
-  margin-bottom: 50pt;
-  border: solid 1px black;
-  background-color: black;
-  color: darkgreen;
-  box-shadow: 5px 10px 50px darkgrey;
+  margin-right: 45%;
+  margin-top: 360px;
+  margin-bottom: 50px;
+  border: solid 1px darkgreen;
+  background-image: radial-gradient(black, darkgreen);
+  color: white;
+  box-shadow: 0 8px 16px 0 white;
 }
 
-.changelog:hover {
-  background-color: white;
+#changelog_btn:hover {
   border-color: white;
+  box-shadow: 0 8px 16px 0 green;
 }
+
+.changelog {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.changelog .changelog_block h3{
+  padding-bottom: 50px;
+}
+.changelog h3, .changelog_block_text, h4 {
+  text-align: center;
+}
+.changelog h3 {
+  font-size: 25pt;
+}
+.changelog .changelog_block .changelog_block_text {
+  display: none;
+}
+.changelog .changelog_block:hover .changelog_block_text {
+  display: block;
+}
+.changelog .changelog_block:hover h3 {
+  padding-bottom: 0;
+  margin-bottom: 50px;
+}
+.changelog .changelog_block:hover {
+  border: solid 1px white;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.changelog_block_btn {
+  padding: 0.8%;
+  border: solid 1px darkgreen;
+  background-image: radial-gradient(black, darkgreen);
+  color: white;
+  box-shadow: 0 8px 16px 0 white;
+}
+.changelog_block_btn:hover {
+  border-color: white;
+  box-shadow: 0 8px 16px 0 green;
+
+/*********************************************/
