@@ -11,12 +11,11 @@ p, pre, strong {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .title {
     text-align: center;
     font-size: 40pt;
-}
-.title:not(div .title) {
-  border-bottom: solid 1px white;
+    border-bottom: solid 1px white;
 }
 body h2, h3, h4, h5{
   color: white;
@@ -39,9 +38,6 @@ body section {
 strong.command {
   color: green;
   text-decoration: underline;
-}
-strong.command:hover {
-  color: #2c9e15;
 }
 
 table, thead {
@@ -136,9 +132,6 @@ li.dropdown {
 }
 .important::before {
   content: "Warning: ";
-}
-.important:hover {
-  color: darkred;
 }
 .overview {
   float: right;

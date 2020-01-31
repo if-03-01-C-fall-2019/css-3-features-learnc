@@ -42,6 +42,10 @@
     opacity: 1;
   }
 }
+.about_us_title {
+  border-bottom: none;
+}
+
 
 .about_us_text {
   color: white;
