@@ -43,6 +43,13 @@
   }
 }
 
+.about_us_text {
+  color: white;
+  font-size: 25px;
+
+  padding-left: 50pt;
+  padding-right: 50pt;
+}
 
 .parallax {
   background-image: url("../images/data.jpg");
