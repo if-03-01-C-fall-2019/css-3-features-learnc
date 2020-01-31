@@ -6,6 +6,8 @@ body, html{
 body {
   padding-top: 45pt;
   margin: 0;
+
+
 }
 p, pre, li, strong {
   padding-left: 20px;
@@ -20,50 +22,6 @@ p, pre, li, strong {
   color: white;
 }
 /************** Mainpage Title *******************/
-.maintitle {
-    font-family: monospace;
-    color: green;
-    text-align: center;
-    font-size: 100pt;
-
-    padding-top: 160px;
-    padding-bottom: 290px;
-
-    -webkit-animation: maintitle 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    	        animation: maintitle 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-@-webkit-keyframes maintitle {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-            transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@keyframes maintitle {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-            transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-  }
-}
 /****************************************/
 
 body h2, h3, h4, h5{
@@ -75,6 +33,7 @@ body h2, h3, h4, h5{
 body h4 {
   padding-top: 25px;
 }
+
 body section {
   font-family: sans-serif;
   color: #a0a0a0;
@@ -82,6 +41,7 @@ body section {
   font-weight: 100;
   padding-bottom: 25px;
 }
+
 strong.command {
   color: green;
   text-decoration: underline;
@@ -212,78 +172,8 @@ li.dropdown {
   padding: 15px;
 
 }
-.parallax {
-  background-image: url("../images/a.jpg");
-  min-height: 100px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
 /******************* changelog ********************/
-#changelog_btn{
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20pt;
-  padding: 1%;
-  margin-left: 45%;
-  margin-right: 45%;
-  margin-top: 360px;
-  margin-bottom: 50px;
-  border: solid 1px darkgreen;
-  background-image: radial-gradient(black, darkgreen);
-  color: white;
-  box-shadow: 0 8px 16px 0 darkgrey;
-}
 
-#changelog_btn:hover {
-  border-color: white;
-  box-shadow: 0 8px 16px 0 green;
-}
-
-.changelog {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-.changelog .changelog_block h3{
-  padding-bottom: 50px;
-}
-.changelog h3, .changelog_block_text, h4 {
-  text-align: center;
-}
-.changelog h3 {
-  font-size: 25pt;
-}
-.changelog .changelog_block .changelog_block_text {
-  display: none;
-}
-.changelog .changelog_block:hover .changelog_block_text {
-  display: block;
-}
-.changelog .changelog_block:hover h3 {
-  padding-bottom: 0;
-  margin-bottom: 50px;
-}
-.changelog .changelog_block:hover {
-  border: solid 1px white;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-.changelog_block_btn {
-  padding: 0.8%;
-  border: solid 1px darkgreen;
-  background-image: radial-gradient(black, darkgreen);
-  color: white;
-  box-shadow: 0 8px 16px 0 darkgrey;
-}
-.changelog_block_btn:hover {
-  border-color: white;
-  box-shadow: 0 8px 16px 0 green;
 
 /*********************************************/
