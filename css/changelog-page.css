@@ -6,7 +6,7 @@
 .changelog .changelog_block h3{
   padding-bottom: 50px;
 }
-.changelog h3, .changelog_block_text, h4 {
+.changelog h3, .changelog_block_text {
   text-align: center;
 }
 .changelog h3 {
@@ -37,4 +37,9 @@
 .changelog_block_btn:hover {
   border-color: white;
   box-shadow: 0 8px 16px 0 green;
+}
+
+.changelog .changelog_block .changelog_block_text dl dt {
+  margin-top: 30px;
+  color: white;
 }
