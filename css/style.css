@@ -19,7 +19,8 @@ p, pre, li, strong {
   font-size: 25px;
   color: white;
 }
-h1 {
+/************** Mainpage Title *******************/
+.maintitle {
     font-family: monospace;
     color: green;
     text-align: center;
@@ -27,8 +28,44 @@ h1 {
 
     padding-top: 160px;
     padding-bottom: 290px;
-    0px;
+
+    -webkit-animation: maintitle 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    	        animation: maintitle 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+@-webkit-keyframes maintitle {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes maintitle {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+/****************************************/
+
 body h2, h3, h4, h5{
   color: white;
   text-align: left;
@@ -52,6 +89,7 @@ strong.command {
 strong.command:hover {
   color: #2c9e15;
 }
+
 table, thead {
   border-collapse: collapse;
   width: 80%;
@@ -65,7 +103,7 @@ th, td {
 th {
   font-size: 18pt;
 }
-ul:not(#navigation, .changelog) {
+.cs-bullets {
   list-style-image: url('../images/csharp.png');
 }
 /************** navigation bar ******************/
@@ -78,6 +116,7 @@ ul:not(#navigation, .changelog) {
   width: 100%;
   position: fixed;
   background-color: black;
+  z-index: 1;
 }
 
 #navigation li {
@@ -199,7 +238,7 @@ li.dropdown {
   border: solid 1px darkgreen;
   background-image: radial-gradient(black, darkgreen);
   color: white;
-  box-shadow: 0 8px 16px 0 white;
+  box-shadow: 0 8px 16px 0 darkgrey;
 }
 
 #changelog_btn:hover {
@@ -241,7 +280,7 @@ li.dropdown {
   border: solid 1px darkgreen;
   background-image: radial-gradient(black, darkgreen);
   color: white;
-  box-shadow: 0 8px 16px 0 white;
+  box-shadow: 0 8px 16px 0 darkgrey;
 }
 .changelog_block_btn:hover {
   border-color: white;
